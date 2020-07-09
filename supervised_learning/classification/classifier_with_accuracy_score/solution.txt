@@ -1,0 +1,94 @@
+print("-------------")
+l1 = Learning()
+l1.countVectorizerTrainer(10, 2, 5)
+l1.treeClassifier(8, 5)
+l1.NBClassifier(True, 0)
+l1.KNClassifier(8, "brute")
+l1.linearClassifier(8, 2, 0)
+
+
+print("-------------")
+l1 = Learning()
+l1.tfidfVectorizerTrainer(10, 2, 5)
+l1.treeClassifier(8, 5)
+l1.NBClassifier(True, 0)
+l1.KNClassifier(8, "brute")
+l1.linearClassifier(8, 2, 0)
+
+print("-------------")
+l1.countVectorizerTrainer(15, 4, 10)
+l1.treeClassifier(10, 8)
+l1.NBClassifier(False, 2)
+l1.KNClassifier(8, "ball_tree")
+l1.linearClassifier(6, 1, 0)
+
+print("-------------")
+l1.tfidfVectorizerTrainer(15, 5, 10)
+l1.treeClassifier(10, 8)
+l1.NBClassifier(False, 2)
+l1.KNClassifier(8, "ball_tree")
+l1.linearClassifier(6, 1, 0)
+
+print("-------------")
+l1.countVectorizerTrainer(20, 6, 15)
+l1.treeClassifier(10, 8)
+l1.NBClassifier(False, 2)
+l1.KNClassifier(8, "ball_tree")
+l1.linearClassifier(6, 1, 0)
+
+
+print("-------------")
+l1.tfidfVectorizerTrainer(20, 6, 15)
+l1.treeClassifier(10, 8)
+l1.NBClassifier(False, 2)
+l1.KNClassifier(8, "ball_tree")
+l1.linearClassifier(6, 1, 0)
+
+
+
+-------------
+Accuracy Tree classifier:  0.7337110481586402
+Accuracy MultinomialNB:  0.7337110481586402
+Accuracy KNeighbours:  0.7280453257790368
+Accuracy linear:  0.7337110481586402
+-------------
+Accuracy Tree classifier:  0.6961451247165533
+Accuracy MultinomialNB:  0.6961451247165533
+Accuracy KNeighbours:  0.673469387755102
+Accuracy linear:  0.6961451247165533
+-------------
+Accuracy Tree classifier:  0.7188208616780045
+Accuracy MultinomialNB:  0.7188208616780045
+Accuracy KNeighbours:  0.35374149659863946
+Accuracy linear:  0.7188208616780045
+-------------
+Accuracy Tree classifier:  0.7301587301587301
+Accuracy MultinomialNB:  0.7301587301587301
+Accuracy KNeighbours:  0.7324263038548753
+Accuracy linear:  0.7301587301587301
+-------------
+Accuracy Tree classifier:  0.7551020408163265
+Accuracy MultinomialNB:  0.7528344671201814
+Accuracy KNeighbours:  0.7551020408163265
+Accuracy linear:  0.7528344671201814
+-------------
+Accuracy Tree classifier:  0.7278911564625851
+Accuracy MultinomialNB:  0.7256235827664399
+Accuracy KNeighbours:  0.7256235827664399
+Accuracy linear:  0.7188208616780045
+
+
+
+And  I found highest Accuracy in this case:
+print("-------------")
+l1.countVectorizerTrainer(20, 6, 15)
+l1.treeClassifier(10, 8)
+l1.NBClassifier(False, 2)
+l1.KNClassifier(8, "ball_tree")
+l1.linearClassifier(6, 1, 0)
+
+-------------
+Accuracy Tree classifier:  0.7551020408163265
+Accuracy MultinomialNB:  0.7528344671201814
+Accuracy KNeighbours:  0.7551020408163265
+Accuracy linear:  0.7528344671201814
