@@ -1,0 +1,103 @@
+    print("-------------Tree Classifier scores using count vertorizer---------")
+    l1 = Learning()
+    l1.countVectorizerTrainer(10, 2, 5)
+    l1.treeClassifier(8, 5)
+    print("-------------Tree Classifier scores using tfidf----------------")
+    l1 = Learning()
+    l1.tfidfVectorizerTrainer(10, 2, 5)
+    l1.treeClassifier(8, 5)
+
+
+
+
+    print("-------------NB Classifier scores using count vertorizer--------")
+    l1 = Learning()
+    l1.countVectorizerTrainer(10, 2, 5)
+    l1.NBClassifier(True, 5)
+    print("-------------NB Classifier scores using tfidf----------------")
+    l1 = Learning()
+    l1.tfidfVectorizerTrainer(10, 2, 5)
+    l1.NBClassifier(True, 5)
+
+
+    print("-------------Linear Classifier scores using count vertorizer----------")
+    l1 = Learning()
+    l1.countVectorizerTrainer(10, 2, 5)
+    l1.linearClassifier(15,1,0)
+    print("-------------Linear Classifier scores using tfidf---------------")
+    l1 = Learning()
+    l1.tfidfVectorizerTrainer(10, 0, 15)
+    l1.linearClassifier(15,1,0)
+
+
+
+
+
+
+    print("-------------KNN Classifier scores using count vertorizer----------")
+    l1 = Learning()
+    l1.countVectorizerTrainer(10, 0, 15)
+    l1.KNClassifier(8, "brute")
+    print("-------------KNN Classifier scores using tfidf---------------")
+    l1 = Learning()
+    l1.tfidfVectorizerTrainer(10, 0, 15)
+    l1.KNClassifier(8, "brute")
+
+
+
+    Results
+
+
+
+    -------------Tree Classifier scores using count vertorizer---------
+Accuracy Score Tree classifier:  0.83
+Precision Score Tree classifier:  0.83
+F1 Score Tree classifier:  0.83
+Recal Score Tree classifier:  0.83
+-------------Tree Classifier scores using tfidf----------------
+Accuracy Score Tree classifier:  0.845
+Precision Score Tree classifier:  0.845
+F1 Score Tree classifier:  0.845
+Recal Score Tree classifier:  0.845
+
+
+
+
+-------------NB Classifier scores using count vertorizer--------
+Accuracy Score MultinomialNB:  0.8483333333333334
+Precision Score MultinomialNB:  0.8483333333333334
+F1 Score MultinomialNB:  0.8483333333333335
+Recal Score MultinomialNB:  0.8483333333333334
+-------------NB Classifier scores using tfidf----------------
+Accuracy Score MultinomialNB:  0.845
+Precision Score MultinomialNB:  0.845
+F1 Score MultinomialNB:  0.845
+Recal Score MultinomialNB:  0.845
+
+
+
+-------------Linear Classifier scores using count vertorizer----------
+Accuracy Score linear:  0.834
+Precision Score linear:  0.834
+F1 Score linear:  0.834
+Recal Score linear:  0.834
+-------------Linear Classifier scores using tfidf---------------
+Accuracy Score linear:  0.8316666666666667
+Precision Score linear:  0.8316666666666667
+F1 Score linear:  0.8316666666666667
+Recal Score linear:  0.8316666666666667
+
+
+
+
+
+-------------KNN Classifier scores using count vertorizer----------
+Accuracy Score KNeighbours:  0.8328571428571429
+Precision Score KNeighbours:  0.8328571428571429
+F1 Score KNeighbours:  0.8328571428571429
+Recal Score KNeighbours:  0.8328571428571429
+-------------KNN Classifier scores using tfidf---------------
+Accuracy Score KNeighbours:  0.83
+Precision Score KNeighbours:  0.83
+F1 Score KNeighbours:  0.83
+Recal Score KNeighbours:  0.83
