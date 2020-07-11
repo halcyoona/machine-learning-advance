@@ -1,0 +1,11 @@
+Download the dataset of imdb movie reviews from the source:
+
+https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+
+ 
+
+1. Use 70% reviews for the training the model and 30% for testing. Shuffle the instances before split. Note time the model's training and testing time. Using any classifier you prefer)
+
+2. Use preprocessing to filter unwanted tokens, stopwords, normalize case, filter domain specific stopwords using regex, lemmatization and stemming. Using POS to filter words with unwanted POS i.e., not contributing towards improving.
+
+Try to improve the training and testing time without dropping the accuracy.
