@@ -1,0 +1,3 @@
+Using topic modeling for the movie reviews dataset to find the key topics discussed in the dataset. Try keeping the number of topics as 10, 15 and 20.
+
+Represent each topic with its 15 most prominant words.
